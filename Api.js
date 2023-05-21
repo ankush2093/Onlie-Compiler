@@ -5,12 +5,12 @@ const compiler = require("compilex")
 const options = { stats: true }
 compiler.init(options)
 app.use(bodyP.json())
-app.use("/codemirror-5.65.13", express.static("/codemirror-5.65.13"))
+app.use("/codemirror-5.65.13", express.static("~/codemirror-5.65.13"))
 app.get("/", function (req, res) {
     compiler.flush(function () {
         console.log("deleted")
     })
-    res.sendFile("/index.html")
+    res.sendFile("~/index.html")
 })
 app.post("/compile", function (req, res) {
     var code = req.body.code
