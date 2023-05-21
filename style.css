@@ -1,0 +1,12 @@
+.testclss{
+    color: blanchedalmond;
+}
+#run{
+    cursor: pointer;
+    background-color: blue;
+    border: 1px solid red;
+}
+#run:hover{
+    background-color: green;
+    border: 1px solid rgb(175, 97, 235);
+}
